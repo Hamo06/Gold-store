@@ -1,0 +1,139 @@
+.product-wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .product-image-info {
+    width: 200px !important;
+    //height: 170px !important;
+    // box-shadow: 1px 1px 1px 1px ;
+    background-color: #fff;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+      height: 117px;
+      margin-right: 10px;
+    }
+
+    p {
+      //width: 100%;
+      //margin: 0;
+      //text-align: center;
+      color: #3d8bd9;
+      padding: 0 8px;
+      font-weight: bolder;
+    }
+
+    span {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: #3d8bd9;
+      color: #fff;
+      border-radius: 50%;
+      line-height: 15px;
+      cursor: pointer;
+
+      &:hover {
+        scale: 1.2;
+      }
+
+    }
+  }
+
+  .modaltitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    h3 {
+      margin: 0;
+      color: #1976d2;;
+    }
+
+  }
+}
+
+.price-filter-wrap {
+  margin: 50px 0;
+
+  div {
+    margin: 0 auto;
+  }
+
+  .price-filter {
+    width: 70%;
+    display: flex;
+
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
+
+    }
+
+    button {
+      width: 67%;
+      background-color: red;
+    }
+
+    &>div {
+      width: 45%;
+
+      @media screen and (max-width: 850px) {
+        width: 70%;
+        margin-top: 10px;
+
+      }
+    }
+
+    //div {
+    //  width: 35%;
+    //  min-width: 70px;
+    //  border: 1px solid #1976d2;
+    //  padding: 5px 8px;
+    //  color: #3d8bd9;
+    //  font-weight: bold;
+    //  border-radius: 10px;
+    //
+    //}
+  }
+
+  //.price-filter-button {
+  //  width: 67%;
+  //  margin-top: 10px;
+  //  border-radius: 10px;
+  //  border: 1px solid #1976d2;
+  //  background-color: #1976d2;
+  //  color: white;
+  //
+  //  @media screen and (max-width: 850px) {
+  //    width: 50%;
+  //    margin-top: 10px;
+  //
+  //  }
+  //
+  //  &:hover {
+  //    opacity: 0.9;
+  //    color: #1976d2;
+  //  }
+  //}
+
+}

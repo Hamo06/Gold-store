@@ -1,0 +1,125 @@
+.category {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 130px;
+  //height: 94px;
+  //   align-items: center;
+  margin: 0 auto;
+
+  .category-filter-icons {
+    color: rgb(138, 138, 138);
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 51;
+    background-color:#dee1e6; ;
+  }
+
+  .category-image-container {
+    width: 90%;
+    margin: 0 10px;
+    display: flex !important;
+
+
+    .swiper-wrapper {
+      display: flex !important;
+    }
+
+    .category-image-info {
+      width: 150px !important;
+      //height: 88px !important;
+      // box-shadow: 1px 1px 1px 1px ;
+      background-color: #fff;
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      img {
+        width: 100%;
+        height: 88px;
+        margin-right: 10px;
+      }
+
+      p {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 5px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .delete-icon {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        background-color: #3d8bd9;
+        color: #fff;
+        border-radius: 50%;
+        line-height: 15px;
+        cursor: pointer;
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
+  }
+
+  .add-categoryImage {
+    background-color: #fff;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(25, 118, 210, 0.04);
+    }
+  }
+}
+
+.modaltitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+  h3 {
+    margin: 0;
+    color: #1976d2;;
+  }
+
+}
+
+.modal-catecory {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+
+  .modal-icon-male,
+  .modal-icon-female {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    color: rgb(138, 138, 138);
+    border: 1px solid rgb(138, 138, 138);
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    span {
+      margin-left: 7px;
+    }
+  }
+}
